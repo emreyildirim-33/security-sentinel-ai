@@ -1,5 +1,7 @@
 # Security Sentinel AI
 
+**Canlı Demo:** [https://security-sentinel-ai.vercel.app/](https://security-sentinel-ai.vercel.app/)
+
 Security Sentinel AI, modern yazılım geliştirme süreçlerinde güvenliği ön plana çıkaran, yapay zeka destekli bir statik kod analiz (SAST) aracıdır. Bu proje, full-stack bir web uygulamasının içine entegre edilmiş akıllı bir güvenlik denetim mekanizması sunar.
 
 ## 🧠 Proje Felsefesi ve Yetkinlikler
