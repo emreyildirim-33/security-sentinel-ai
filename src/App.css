@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+body {
+    background: radial-gradient(circle at 10% 10%, rgba(56, 189, 248, 0.15), transparent 40%),
+                radial-gradient(circle at 90% 90%, rgba(139, 92, 246, 0.15), transparent 40%),
+                #020617;
+    color: #f1f5f9; font-family: 'Inter', sans-serif; margin: 0; min-height: 100vh;
+}
+.app-container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+
+header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; }
+.logo { font-size: 24px; font-weight: 700; color: #38bdf8; display: flex; align-items: center; gap: 10px; }
+
+.main-grid { display: grid; grid-template-columns: 1fr 350px; gap: 30px; }
+textarea, .history-section, .result-box {
+    background: rgba(15, 23, 42, 0.4) !important;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+
+textarea { width: 100%; height: 350px; color: #e2e8f0; padding: 20px; font-family: 'Monaco', monospace; resize: none; border: none; outline: none; }
+textarea:focus { border: 1px solid rgba(56, 189, 248, 0.5); }
+
+.btn-primary {
+    background: linear-gradient(135deg, #0ea5e9, #6366f1);
+    color: white; padding: 15px; border-radius: 12px; border: none; font-weight: 600;
+    cursor: pointer; width: 100%; margin-top: 15px; transition: 0.3s;
+}
+@keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(14, 165, 233, 0.7); } 70% { box-shadow: 0 0 0 15px rgba(14, 165, 233, 0); } }
+.btn-loading { animation: pulse 1.5s infinite; }
+
+.history-section { padding: 20px; height: 420px; display: flex; flex-direction: column; }
+.history-item {
+    padding: 12px; background: rgba(30, 41, 59, 0.3); margin-bottom: 8px; border-radius: 10px;
+    cursor: pointer; color: #cbd5e1; display: flex; justify-content: space-between;
+}
+
+.result-box { margin-top: 30px; padding: 30px; }
+.security-card {
+    background: rgba(2, 6, 23, 0.3); border-left: 4px solid transparent;
+    padding: 18px; margin-bottom: 15px; border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.critical { border-left-color: #ef4444; background: rgba(239, 68, 68, 0.05); }
+.high { border-left-color: #f97316; background: rgba(249, 115, 22, 0.05); }
+.medium { border-left-color: #eab308; background: rgba(234, 179, 8, 0.05); }
+.low { border-left-color: #3b82f6; background: rgba(59, 130, 246, 0.05); }
