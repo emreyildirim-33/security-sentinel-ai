@@ -139,8 +139,8 @@ Live Demo: https://security-sentinel-ai.vercel.app/
 
 ## Notes
 
-This project was built as a practical AI-assisted developer tool.
-The main focus was integrating AI into a real frontend workflow, structuring security-focused prompts, and presenting vulnerability feedback in a clear and useful way.
+This project was built as a practical AI-assisted developer tool. The main focus was integrating AI into a real frontend workflow, structuring security-focused prompts, and presenting vulnerability feedback in a clear and useful way.
+
 For production use, API calls should ideally be routed through a backend proxy to avoid exposing API keys on the client side.
 
 The tool should be used for learning and first-pass security awareness, not as a replacement for professional penetration testing or enterprise-grade static analysis tools.
