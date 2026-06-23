@@ -1,13 +1,15 @@
 # Security Sentinel AI
 
-Security Sentinel AI is an AI-assisted static code analysis tool built with React, Vite, Groq API, and Llama 3.3.
-It helps developers review code snippets and identify common security issues such as SQL Injection, Cross-Site Scripting (XSS), hardcoded secrets, path traversal, and unsafe coding patterns.
+Security Sentinel AI is an AI-assisted code security review tool built with React, Vite, Groq API, and Llama 3.3.
+
+It helps developers review code snippets and identify common security risks such as SQL Injection, Cross-Site Scripting (XSS), hardcoded secrets, path traversal, and unsafe coding patterns.
 
 Live Demo: https://security-sentinel-ai.vercel.app/
 
 ## Overview
 
 This project combines frontend development, AI integration, and secure coding awareness.
+
 Users can paste a code snippet into the application, run an AI-powered analysis, and receive structured feedback about potential vulnerabilities, severity level, explanation, and suggested remediation.
 
 The goal of this project is not to replace professional security tools, but to demonstrate how AI can support developers in understanding common security risks and improving code quality.
@@ -27,7 +29,7 @@ The goal of this project is not to replace professional security tools, but to d
 
 ## Features
 
-* AI-assisted code security analysis
+* AI-assisted code security review
 * Detection-oriented feedback for common vulnerabilities
 * Severity-based vulnerability explanation
 * Developer-friendly remediation guidance
@@ -69,9 +71,10 @@ User Interface Result
 ```
 
 The frontend sends the user-provided code snippet to the AI model with a structured security-analysis prompt.
-The response is then displayed in a readable format so developers can understand the possible issue, why it matters, and how it could be improved.
 
-## What I Practiced
+The response is displayed in a readable format so developers can understand the possible issue, why it matters, and how it could be improved.
+
+## What This Project Demonstrates
 
 * Building a modern React application with Vite
 * Integrating an external AI API into a frontend project
@@ -80,7 +83,7 @@ The response is then displayed in a readable format so developers can understand
 * Presenting AI-generated results in a clean UI
 * Applying OWASP and secure coding concepts
 * Deploying a frontend application with Vercel
-* Building an AI-assisted developer tool with practical use cases
+* Building an AI-assisted developer tool with security-focused use cases
 
 ## Getting Started
 
@@ -139,11 +142,11 @@ Live Demo: https://security-sentinel-ai.vercel.app/
 
 ## Notes
 
-This project was built as a practical AI-assisted developer tool. The main focus was integrating AI into a real frontend workflow, structuring security-focused prompts, and presenting vulnerability feedback in a clear and useful way.
+This project focuses on AI-assisted security review, frontend AI integration, structured prompt design, and clear vulnerability feedback presentation.
 
 For production use, API calls should ideally be routed through a backend proxy to avoid exposing API keys on the client side.
 
-The tool should be used for learning and first-pass security awareness, not as a replacement for professional penetration testing or enterprise-grade static analysis tools.
+The tool is intended for first-pass security awareness and developer guidance, not as a replacement for professional penetration testing or enterprise-grade static analysis tools.
 
 ## Repository
 
